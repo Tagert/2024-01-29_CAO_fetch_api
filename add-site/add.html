@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property add list</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="add-style.css" />
+  </head>
+  <body>
+    <header class="bg-success py-4">
+      <div class="container">
+        <h1 class="text-white">Add your property to sale</h1>
+        <p class="text-white">Yes, you can sell where you live and get cach!</p>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <div class="add-property-card">
+        <h2>Add property</h2>
+        <div class="add-title add-image">
+          <label for="text">Image</label>
+          <input id="imageInput" type="text" placeholder="Image url" />
+        </div>
+
+        <div class="add-title add-price">
+          <label for="number">Price, EUR</label>
+          <input id="priceInput" type="number" placeholder="10000" />
+        </div>
+
+        <div class="add-title add-description">
+          <label for="text">Description</label>
+          <textarea
+            id="descriptionInput"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Your description about property..."
+          ></textarea>
+        </div>
+
+        <div class="add-title add-city">
+          <select name="city" id="cityInput"></select>
+        </div>
+
+        <div class="add-button">
+          <button id="add" class="btn btn-outline-secondary">
+            Add property
+          </button>
+          <button id="go-back" class="btn btn-outline-secondary">
+            <a href="/2024-01-29_CAO_fetch_api/index.html">Go back</a>
+          </button>
+        </div>
+      </div>
+
+      <div id="statusMessages"></div>
+    </main>
+
+    <script src="add-script.js"></script>
+  </body>
+</html>

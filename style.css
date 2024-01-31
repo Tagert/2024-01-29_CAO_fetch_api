@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.container #add-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 6.688rem;
+}
+.cards-container .property-card {
+  height: 400px;
+  width: 250px;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.cards-container .property-card .images-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+}
+.cards-container .property-card .description-box {
+  padding: 1rem;
+}
+.cards-container .property-card .description-box p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+.cards-container .property-card .description-box p:nth-child(2) {
+  font-style: italic;
+}
+.cards-container .property-card .description-box p:last-child {
+  text-align: justify;
+}
+.cards-container .property-card .btn {
+  margin-left: 1rem;
+}/*# sourceMappingURL=style.css.map */

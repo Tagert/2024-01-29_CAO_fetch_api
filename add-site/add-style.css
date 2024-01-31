@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+header {
+  background-color: hsla(152.2, 68.8%, 31.4%, 0.8);
+  padding: 1.5rem 0rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: 119.5px;
+  margin-right: 119.5px;
+}
+.container h1 {
+  font-size: 40px;
+  padding-bottom: 1rem;
+  color: white;
+}
+.container p {
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 2rem;
+  padding: 2rem;
+}
+.main-section .add-property-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main-section .add-property-card .add-title {
+  display: flex;
+  flex-direction: column;
+}
+.main-section .add-property-card input,
+.main-section .add-property-card textarea,
+.main-section .add-property-card select {
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  outline: none;
+}
+.main-section .add-property-card input::-moz-placeholder, .main-section .add-property-card textarea::-moz-placeholder, .main-section .add-property-card select::-moz-placeholder {
+  padding-left: 0.5rem;
+}
+.main-section .add-property-card input::placeholder,
+.main-section .add-property-card textarea::placeholder,
+.main-section .add-property-card select::placeholder {
+  padding-left: 0.5rem;
+}
+.main-section .add-property-card label {
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+}
+.main-section .add-property-card .add-button {
+  display: flex;
+  gap: 2rem;
+}
+.main-section .add-property-card .add-button button {
+  height: 40px;
+  width: 125px;
+  border: 0.1rem solid #6c757d;
+}
+.main-section .add-property-card .add-button button:hover {
+  border-color: #198754;
+}
+.main-section .add-property-card .add-button button a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #6c757d;
+}
+.main-section .add-property-card .add-button button a:hover {
+  color: white;
+}
+.main-section #statusMessages h1 {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=add-style.css.map */
